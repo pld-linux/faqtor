@@ -1,16 +1,14 @@
-# $Revision: 1.1 $
-
 Summary:	FAQtor - a FAQ generator
 Summary(pl):	FAQtor - generaor FAQ
 Name:		faqtor
 Version:	0.7
 Release:	1
-License:	GPLv2
+License:	GPL v2
 Group:		Applications/Text
 Source0:	http://dl.sourceforge.net/faqtor/%{name}-%{version}.tgz
 # Source0-md5:	32c3aa742fc5fca90ea4cc2739ed9069
 URL:		http://faqtor.sourceforge.net/
-Requires:	python >= 2.3
+Requires:	python >= 1:2.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,15 +28,13 @@ dokument.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
-cat faqtor.py | sed -e 's!/bin/env!/usr/bin/env!' > faqtor.py.pld
-mv faqtor.py.pld faqtor.py
-
-cp -a faqtor.py $RPM_BUILD_ROOT%{_bindir}
+sed -e 's!/bin/env python!/usr/bin/python!' faqtor.py > $RPM_BUILD_ROOT%{_bindir}/faqtor.py
+chmod 755 $RPM_BUILD_ROOT%{_bindir}/faqtor.py
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/faqtor.py
 %doc README* sample*
+%attr(755,root,root) %{_bindir}/faqtor.py
