@@ -2,13 +2,14 @@ Summary:	FAQtor - a FAQ generator
 Summary(pl):	FAQtor - generaor FAQ
 Name:		faqtor
 Version:	0.7
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Text
 Source0:	http://dl.sourceforge.net/faqtor/%{name}-%{version}.tgz
 # Source0-md5:	32c3aa742fc5fca90ea4cc2739ed9069
 URL:		http://faqtor.sourceforge.net/
 Requires:	python >= 1:2.3
+Requires:	python-PyXML
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
