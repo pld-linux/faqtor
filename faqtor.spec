@@ -30,7 +30,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
 sed -e 's!/bin/env python!/usr/bin/python!' faqtor.py > $RPM_BUILD_ROOT%{_bindir}/faqtor.py
-chmod 755 $RPM_BUILD_ROOT%{_bindir}/faqtor.py
 
 %clean
 rm -rf $RPM_BUILD_ROOT
