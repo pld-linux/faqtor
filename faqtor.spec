@@ -1,5 +1,5 @@
 Summary:	FAQtor - a FAQ generator
-Summary(pl):	FAQtor - generaor FAQ
+Summary(pl):	FAQtor - generator FAQ
 Name:		faqtor
 Version:	0.7
 Release:	2
