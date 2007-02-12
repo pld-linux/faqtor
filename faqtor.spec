@@ -1,5 +1,5 @@
 Summary:	FAQtor - a FAQ generator
-Summary(pl):	FAQtor - generator FAQ
+Summary(pl.UTF-8):   FAQtor - generator FAQ
 Name:		faqtor
 Version:	0.7
 Release:	2
@@ -16,10 +16,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 FAQtor is a FAQ generator. It is a simple but powerfull Python script
 that can convert custom XML files into professional looking FAQs.
 
-%description -l pl
-FAQtor jest generatorem plików FAQ. Jest to prosty, lecz wyposa¿ony
-w du¿e mo¿liwo¶ci skrypt Pythona konwertuj±cy pliki XML opisuj±ce
-sekcje, pytania i odpowiedzi FAQ w profesjonalnie wygl±daj±cy
+%description -l pl.UTF-8
+FAQtor jest generatorem plikÃ³w FAQ. Jest to prosty, lecz wyposaÅ¼ony
+w duÅ¼e moÅ¼liwoÅ›ci skrypt Pythona konwertujÄ…cy pliki XML opisujÄ…ce
+sekcje, pytania i odpowiedzi FAQ w profesjonalnie wyglÄ…dajÄ…cy
 dokument.
 
 %prep
